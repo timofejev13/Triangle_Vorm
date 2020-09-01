@@ -11,11 +11,22 @@ namespace Triangle_Vorm
         public double a;
         public double b;
         public double c;
+        public double ah;
+        public double bh;
+        public double ch;
         public Triangle(double A, double B, double C)
         {
             a = A;
             b = B;
             c = C;
+        }
+        public Triangle()
+        {
+        }
+        public Triangle(double A, double AH)
+        {
+            a = A;
+            ah = AH;
         }
         public string outputA()
         {
@@ -63,6 +74,13 @@ namespace Triangle_Vorm
             { return c; }
             set
             { c = value; }
+        }
+        public double GetSetAH
+        {
+            get
+            { return ah; }
+            set
+            { ah = value; }
         }
         public bool ExistTriangle
         {
