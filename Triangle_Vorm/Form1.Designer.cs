@@ -128,6 +128,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.BlueViolet;
             this.label1.Location = new System.Drawing.Point(37, 290);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 13);
@@ -137,6 +138,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.BlueViolet;
             this.label2.Location = new System.Drawing.Point(37, 327);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 13);
@@ -146,6 +148,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.BlueViolet;
             this.label3.Location = new System.Drawing.Point(37, 364);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 13);
@@ -155,6 +158,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.BlueViolet;
             this.label6.Location = new System.Drawing.Point(263, 290);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(55, 13);
@@ -206,6 +210,8 @@
             this.Controls.Add(this.Run_button);
             this.Name = "Form1";
             this.Text = "Работа с треугольником";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.DoubleClick += new System.EventHandler(this.Form1_DoubleClick);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

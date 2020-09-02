@@ -44,6 +44,16 @@ namespace Triangle_Vorm
                 listView1.Items[4].SubItems.Add(Convert.ToString(triangle.Surface()));
                 if (triangle.ExistTriangle) { listView1.Items[5].SubItems.Add("Существует"); }
                 else listView1.Items[5].SubItems.Add("Не существует");
+                if (a == b && a == c)
+                {
+                    listView1.Items[6].SubItems.Add("Равносторонний");
+                    pictureBox1.Image = Image.FromFile(AppContext.BaseDirectory + "rave.png");
+                }
+                else if (a == b || a == c || b == c)
+                {
+                    listView1.Items[6].SubItems.Add("Равнобедренный");
+                    pictureBox1.Image = Image.FromFile(AppContext.BaseDirectory + "raven.png");
+                }
             }
             else if (radioButton2.Checked == true)
             {
@@ -97,6 +107,17 @@ namespace Triangle_Vorm
             txt2.Visible = false;
             txt3.Visible = false;
             txt4.Visible = true;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_DoubleClick(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
         }
     }
 }
