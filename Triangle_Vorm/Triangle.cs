@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Triangle_Vorm
 {
-    class Triangle
+    public class Triangle
     {
         public double a;
         public double b;
@@ -40,6 +40,11 @@ namespace Triangle_Vorm
         {
             return Convert.ToString(c);
         }
+        public string outputAH()
+        {
+            return Convert.ToString(ah);
+        }
+
         public double Perimeter()
         {
             double p = 0;
@@ -52,6 +57,12 @@ namespace Triangle_Vorm
             double p = 0;
             p = (a + b + c)/2;
             s = Math.Sqrt((p * (p - a) * (p - b) * (p - c)));
+            return s;
+        }
+        public double Surface2()
+        {
+            double s = 0;
+            s = Math.Sqrt(((a*ah)/2));
             return s;
         }
         public double GetSetA
